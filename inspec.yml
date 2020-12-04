@@ -1,0 +1,10 @@
+name: MS_Dot_Net_Framework
+title: Microsoft DotNet Framework 4.0 STIG
+maintainer: Kasey Linden
+copyright: N/A
+copyright_email: N/A
+license: Apache-2.0
+summary: "Applicable to systems and applications utilizing the Microsoft .Net version 4.0 framework.
+
+"
+version: 0.1.0
