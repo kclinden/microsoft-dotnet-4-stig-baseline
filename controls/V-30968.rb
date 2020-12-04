@@ -14,7 +14,7 @@ set. In other words, it was executed in an Internet sandbox.
 thrown which effectively states; either explicitly create a sandbox for the
 assembly or run it in full trust.
 
-    The LESSloadFromRemoteSourcesGREAT element specifies the assemblies that
+    The <loadFromRemoteSources> element specifies the assemblies that
 run partially trusted in earlier versions of the .NET Framework will be run
 fully trusted in the .NET Framework 4.
 
@@ -29,15 +29,15 @@ loading of remote code in .Net 4 applications and that code must be run in a
 controlled environment.  The following is an example of the use of
 loadFromRemoteSources.
 
-    LESSconfigurationGREAT
-    LESSruntimeGREAT
-        LESSloadFromRemoteSources enabled=\"true\" \"https://my.dodorg.gov\"
-/GREAT
-        LESSloadFromRemoteSources enabled=\"true\" \"https://192.168.0.*\"
-/GREAT
-        LESSloadFromRemoteSources enabled=\"false\" \"*\" /GREAT
-    LESS/runtimeGREAT
-    LESS/configurationGREAT
+    <configuration>
+    <runtime>
+        <loadFromRemoteSources enabled=\"true\" \"https://my.dodorg.gov\"
+/>
+        <loadFromRemoteSources enabled=\"true\" \"https://192.168.0.*\"
+/>
+        <loadFromRemoteSources enabled=\"false\" \"*\" />
+    </runtime>
+    </configuration>
 
   "
   desc  'rationale', ''

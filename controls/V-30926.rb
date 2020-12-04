@@ -38,10 +38,10 @@ myApp.exe.config.
     Internet Explorer-hosted application configuration files.
 
     If an application hosted in Internet Explorer has a configuration file, the
-location of this file is specified in a LESSlinkGREATER tag with the following
+location of this file is specified in a <link> tag with the following
 syntax.
 
-    LESSlink rel=\"ConfigurationFileName\" href=\"location\"GREATER
+    <link rel=\"ConfigurationFileName\" href=\"location\">
 
     In this tag, \"location\" represents a URL that point to the configuration
 file. This sets the application base. The configuration file must be located on
